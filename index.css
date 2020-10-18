@@ -1,1 +1,181 @@
-/* Put your style information here! */
+:root {
+  --blue: #065876;
+  --navy: #0e4457;
+  --yellow: #ffe99f;
+  --gray: #5e6062;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Roboto, Helvetica Neue, system-ui;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 25pt;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 12pt;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-text {
+  flex-direction: column;
+  margin-left: 1rem;
+  height: 100%;
+  justify-content: center;
+}
+
+.tree {
+  height: 65px;
+  width: auto;
+}
+
+nav li a {
+  color: white;
+  background-color: var(--blue);
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: var(--navy);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.submenu li {
+  display: none;
+}
+
+nav ul :hover .submenu > li {
+  display: block;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.nav-row {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  nav ul :hover .submenu > li {
+    display: none;
+  }
+
+  .account-info {
+    margin: auto;
+    padding-top: 15px;
+  }
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.toggle-button {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+}
+
+.toggle-button .bar {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.link {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link:hover {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+.button {
+  margin-left: 5px;
+  height: 30px;
+  padding: 5px 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 700;
+  font-size: 14pt;
+  border-radius: 8pt;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 5px 10px;
+}
+
+.button:hover {
+  background-color: var(--navy);
+  text-decoration: none;
+}
+
+.account-info {
+  display: inline-block;
+}
