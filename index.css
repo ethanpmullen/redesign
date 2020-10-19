@@ -3,21 +3,24 @@
   --navy: #0e4457;
   --yellow: #ffe99f;
   --gray: #5e6062;
+  --shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.36);
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: Montserrat, Roboto, Helvetica Neue, system-ui;
+  font-size: 12pt;
 }
 
 h1 {
   font-weight: 800;
-  font-size: 25pt;
+  font-size: 20pt;
 }
 
 h2 {
   font-weight: 700;
+  font-size: 18pt;
 }
 
 h3 {
@@ -30,6 +33,51 @@ h3 {
   display: block;
 }
 
+@media (max-width: 800px) {
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  nav ul :hover .submenu > li {
+    display: none;
+  }
+
+  .account-info {
+    margin: auto;
+    padding-top: 15px;
+  }
+  .nav-header {
+    margin-top: 15px;
+    padding: 10px;
+  }
+}
+
+/* nav bar */
+.tree {
+  height: 55px;
+  width: auto;
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -38,14 +86,9 @@ h3 {
 
 .logo-text {
   flex-direction: column;
-  margin-left: 1rem;
+  margin-left: 0.85rem;
   height: 100%;
   justify-content: center;
-}
-
-.tree {
-  height: 65px;
-  width: auto;
 }
 
 nav li a {
@@ -58,6 +101,7 @@ nav li a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.36);
 }
 
 nav li a:hover {
@@ -90,44 +134,14 @@ nav ul :hover .submenu > li {
   width: 100%;
 }
 
-.nav-row {
-  margin-bottom: 15px;
-}
-
-@media (max-width: 800px) {
-  .toggle-button {
-    display: flex;
-  }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar-links ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-  nav ul :hover .submenu > li {
-    display: none;
-  }
-
-  .account-info {
-    margin: auto;
-    padding-top: 15px;
-  }
-}
-
 .nav-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   padding-bottom: 0;
   flex-wrap: wrap;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .toggle-button {
@@ -156,9 +170,10 @@ nav ul :hover .submenu > li {
 }
 
 .button {
+  margin: 10px 0px;
   margin-left: 5px;
   height: 30px;
-  padding: 5px 44px;
+  padding: 5px 20px;
   align-items: center;
   justify-content: center;
   background-color: var(--blue);
@@ -167,10 +182,17 @@ nav ul :hover .submenu > li {
   font-size: 14pt;
   border-radius: 8pt;
   text-decoration: none;
-  cursor: pointer;
-  box-shadow: 5px 10px;
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.36);
+  height: 25px;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
+.button a {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
 .button:hover {
   background-color: var(--navy);
   text-decoration: none;
@@ -178,4 +200,101 @@ nav ul :hover .submenu > li {
 
 .account-info {
   display: inline-block;
+}
+
+/* body */
+
+.update {
+  background-color: var(--yellow);
+  margin: 20px 0px;
+  padding: 20px;
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.36);
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 5;
+  min-width: 300px;
+  padding: 10px;
+}
+
+input {
+  padding: 5px 15px;
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+input:focus {
+  outline: 0 solid transparent;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.column {
+  max-width: 290px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 10pt;
+}
+
+.icon {
+  max-height: 30px;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.category-head {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.sidebar {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.event {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 5px 0px;
+}
+
+.socials {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.social {
+  height: 50px;
+  width: auto;
+}
+
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  padding: 15px;
 }

@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="index.css" />
     <script src="script.js" defer></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css"
+    />
   </head>
 
   <body>
     <div class="content">
       <nav>
-        <div class="nav-row">
-          <div class="nav-header">
+        <div class="nav-header">
+          <div class="top-row">
             <div class="logo">
               <img class="tree" src="images/tree.png" alt="tree" />
               <div class="logo-text">
                 <h1>Fulton County</h1>
-                <h2>Library System</h2>
+                <h3>Library System</h3>
               </div>
             </div>
             <a href="#" class="toggle-button">
@@ -25,22 +29,23 @@
               <span class="bar"></span>
               <span class="bar"></span>
             </a>
-            <div class="account-info">
-              <span>
-                <a class="link" href="#">Ask a Librarian </a> |
-                <a class="link" href="#">Get a Card </a>
-                <span class="button">Log In</span>
-              </span>
-            </div>
+          </div>
+          <div class="account-info">
+            <span>
+              <a class="link" href="#">Ask a Librarian </a> |
+              <a class="link" href="#">Get a Card </a>
+              <span class="button"><a href="#">Log In </a></span>
+            </span>
           </div>
         </div>
-        <div class="navbar-links">
-          <ul class="nav-row" class="navbar-links">
+
+        <div>
+          <ul class="navbar-links">
             <li>
-              <a href="#"><h3>Home</h3></a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#"><h3>Information</h3></a>
+              <a href="#">Information</a>
               <ul class="submenu">
                 <li><a href="#">Locations</a></li>
                 <li><a href="#">Holidays</a></li>
@@ -53,7 +58,7 @@
               </ul>
             </li>
             <li>
-              <a href="#"><h3>Books</h3></a>
+              <a href="#">Books</a>
               <ul class="submenu">
                 <li><a href="#">Catalog Search</a></li>
                 <li><a href="#">New Books Newsletter</a></li>
@@ -63,7 +68,7 @@
               </ul>
             </li>
             <li>
-              <a href="#"><h3>Research</h3></a>
+              <a href="#">Research</a>
               <ul class="submenu">
                 <li><a href="#">Database Search</a></li>
                 <li><a href="#">Government Information</a></li>
@@ -71,7 +76,7 @@
               </ul>
             </li>
             <li>
-              <a href="#"><h3>Services</h3></a>
+              <a href="#">Services</a>
               <ul class="submenu">
                 <li><a href="#">Kids Links</a></li>
                 <li><a href="#">Teen Links</a></li>
@@ -88,7 +93,182 @@
           </ul>
         </div>
       </nav>
-      <h2>Welcome</h2>
+
+      <div class="update">
+        <h2>COVID-19 Update</h2>
+        Now open for limited in-person pickup.
+        <a class="link" href="#">Click for more information.</a>
+      </div>
+
+      <div class="body">
+        <div class="main">
+          <div class="search">
+            <input placeholder="title, ISBN, author, genre, topic" />
+            <span class="button"><a href="#">Search Catalog </a></span>
+          </div>
+
+          <h1>Links and Resources</h1>
+          <div class="resources">
+            <div class="column">
+              <div class="category">
+                <div class="category-head">
+                  <img src="images/books.png" class="icon" />
+                  <h2>Books</h2>
+                </div>
+
+                <a href="#" class="link">Libby App</a>
+                <p>Borrow and read ebooks and audiobooks</p>
+                <a href="#" class="link">eRead Kids GA</a>
+                <p>
+                  Access nearly 15,000 digital books that encourage early
+                  literacy
+                </p>
+                <a href="#" class="link">A-Z Digital Library</a>
+                <p>Listing of all our digital resources</p>
+                <a href="#" class="link">Just Arrived</a>
+                <p>See what our librariens recommend!</p>
+              </div>
+
+              <div class="category">
+                <div class="category-head">
+                  <img src="images/play.png" class="icon" />
+                  <h2>Media</h2>
+                </div>
+
+                <a href="#" class="link">Hoopla</a>
+                <p>Instantly borrow digital movies, music, eBooks, and more</p>
+                <a href="#" class="link">Freegal Music</a>
+                <p>Download from a music library of over 3 million songs</p>
+                <a href="#" class="link">RB Digital Magazines</a>
+                <p>
+                  The world's largest digital newsstand of full-color new and
+                  backlist magazines
+                </p>
+              </div>
+
+              <div class="category">
+                <div class="category-head">
+                  <img src="images/services.png" class="icon" />
+                  <h2>Services</h2>
+                </div>
+                <a href="#" class="link">Fulco Pass</a>
+                <p>
+                  Free access to Zoo Atlanta, Center for Puppetry arts, and
+                  more!
+                </p>
+                <a href="#" class="link">Interlibrary Loan</a>
+                <p>Place a request to borrow items we do not own</p>
+                <a href="#" class="link">How to Place a Hold</a>
+                <p>Request almost any title that we own</p>
+                <a href="#" class="link">Meeting Rooms</a>
+                <p>Reserve a space in one of our libraries</p>
+                <a href="#" class="link">Library Cards</a>
+                <p>Apply for a library card online</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="category">
+                <div class="category-head">
+                  <img src="images/databases.png" class="icon" />
+                  <h2>Databases</h2>
+                </div>
+
+                <a href="#" class="link">World Book</a>
+                <p>
+                  An engaging, verified, and trustworthy digital resource for
+                  grades pre-K through high school
+                </p>
+                <a href="#" class="link">Galileo</a>
+                <p>
+                  Georgia's virtual library, an intiative of the University of
+                  Georgia
+                </p>
+                <a href="#" class="link">Reference USA</a>
+                <p>
+                  The leading source for business and residential data in the
+                  United States
+                </p>
+                <a href="#" class="link">Science Online</a>
+                <p>Featured diagrams, experiments, data, and topics</p>
+              </div>
+              <div class="category">
+                <div class="category-head">
+                  <img src="images/tutoring.png" class="icon" />
+                  <h2>Tutoring</h2>
+                </div>
+                <a href="#" class="link">Mango</a>
+                <p>
+                  Preparation for realistic conversations and communication in
+                  over 70 world languages.
+                </p>
+                <a href="#" class="link"
+                  >Gale Testing & Education Reference Center</a
+                >
+                <p>
+                  A variety of resources for education, lifelong learning, and
+                  academic research
+                </p>
+                <a href="#" class="link">Learning Express Library</a>
+                <p>
+                  A comprehensive selection of interactive online tutorials,
+                  practice tests, articles, e-books and high-stakes test
+                  preparation
+                </p>
+                <a href="#" class="link">Class Pass @ APS</a>
+                <p>Connecting Libraries and Students for Success</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <h1>Events</h1>
+          <img src="images/theatre.jpg" class="event" />
+          <a href="#" class="link">Theatre Row presents TRLive</a>
+          <p>
+            Theatre lovers who are missing attending shows - NYC’s Theatre Row
+            presents TRLive! featuring artists from Theatre Row’s community in
+            live performances direct from their homes to yours, select Thursdays
+            at 8 pm via their Facebook page.
+          </p>
+
+          <img src="images/pizza.jpg" class="event" />
+          <a href="#" class="link">Let's Get Cooking: Homemade Pizza Dough</a>
+          <p>
+            Learn to make delicious homemade pizza dough that rivals your
+            favorite pizzeria! Directions for two different topping options are
+            also included. Join on Facebook!
+          </p>
+
+          <img src="images/moma.jpg" class="event" />
+          <a href="#" class="link">A Guide for Connecting Creatively</a>
+          <p>
+            The Museum of Modern Art (MoMA) offers free Massive Open Online
+            Courses (MOOCs) on Coursera. Classes are taught by artists and
+            designers about art history, art theory, and art instruction, as
+            well as explorations of specific types of art.
+          </p>
+
+          <h1>Get Social</h1>
+          <div class="socials">
+            <img src="images/instagram.png" class="social" />
+            <img src="images/facebook.png" class="social" />
+            <img src="images/twitter.png" class="social" />
+          </div>
+          <div class="socials">
+            <span class="button"><a href="#">Join Newsletter </a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a class="link" href="#">My Account </a> |
+        <a class="link" href="#">Contact Us </a> |
+        <a class="link" href="#">Employment </a> |
+        <a class="link" href="#">Privacy Statement </a> |
+        <a class="link" href="#">Sitemap </a> |
+        <a class="link" href="#">Support </a>
+      </div>
     </div>
   </body>
 </html>
